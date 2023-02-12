@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Home Page</title>
+    <!-- Tailwind css Link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Start Here  -->
+    <header>
+        <h1 class="text-center text-6xl font-semibold mt-12">Let's get some <SPAN
+                class="text-amber-400 test-semibold">Money</SPAN>!!!
+        </h1>
+        <!-- Header End Here  -->
+    </header>
+    <main>
+        <!-- Main Start Here -->
+        <!-- Section Start Here  -->
+        <section class="mt-12">
+            <!-- Top Section Here  -->
+            <div class=" w-9/12 mx-auto grid grid-cols-3 gap-4 text-white">
+                <!-- Deposit div Here  -->
+                <div class="bg-green-400 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold mb-2">Deposit</h4>
+                    <h2 class="text-5xl">$<span id="depositTotal">00</span></h2>
+                </div>
+                <!-- Withdraw div Here  -->
+                <div class="bg-yellow-400 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold mb-2">Withdraw</h4>
+                    <h2 class="text-5xl">$ <span id="oldWithdraw">00</span></h2>
+                </div>
+                <!-- Main Balance div Here  -->
+                <div class="bg-indigo-400 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold mb-2">Balance</h4>
+                    <h2 class="text-5xl">$<span id="currentTotal">00</span></h2>
+                </div>
+            </div>
+        </section>
+        <!-- Section End Here  -->
+
+        <section class="mt-10">
+            <div class="w-9/12 mx-auto grid grid-cols-2 gap-4 text-black">
+                <div class="bg-cyan-400 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold mb-2">Enter your deposit Amount</h4>
+                    <input class="w-9/12 block mb-2 px-4 py-2 mt-4 rounded" type="number" id="depositMoney"
+                        placeholder="$ Enter your deposit amount">
+
+                    <!-- Button For Verification  -->
+                    <button id="btnDeposit"
+                        class="mb-2 px-4 py-2 mb-8 mt-4 bg-orange-400 rounded text-white font-medium uppercase hover:bg-sky-700">Deposit
+                        Now</button>
+                </div>
+                <div class="bg-purple-400 p-8 rounded-lg">
+                    <h4 class="text-2xl font-bold mb-2">Enter your withdraw amount</h4>
+                    <input class="w-9/12 block mb-2 px-4 py-2 mt-4 rounded" type="number" id="withdrawMoney"
+                        placeholder="$ Type your withdraw amount">
+
+                    <!-- Button For Verification  -->
+                    <button id="btnWithdraw"
+                        class="mb-2 px-4 py-2 mb-8 mt-4 bg-orange-400 rounded text-white font-medium uppercase hover:bg-sky-700">Withdraw
+                        Now</button>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+    <!-- Main End Here -->
+    <script src="./js/deposit.js"></script>
+    <script src="/js/withdraw.js"></script>
+</body>
+
+</html>
