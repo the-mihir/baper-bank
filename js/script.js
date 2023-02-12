@@ -10,7 +10,7 @@ submitBtn.addEventListener('click', function () {
     const pass = getPass.value;
 
     if (email === 'test@mail.com' && pass === '12345') {
-        window.location.href = 'bank.html';
+        window.location.href = '/bank.html';
     }
     else {
         alert("You Input invalid credential, Please Try Again.");
